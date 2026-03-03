@@ -1,0 +1,13 @@
+# TEMPLATE FILE: Copy this to application.yml and provide your own values
+spring:
+  application:
+    name: PortfolioTracker
+  datasource:
+    url: jdbc:postgresql://your-db-url-here:6543/postgres?prepareThreshold=0
+    username: your-username-here
+    password: ${DB_PASSWORD} # Set this in your IDE Environment Variables
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
